@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProductivityApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to my Productivity App</h1>
+    </header>
+    <div class="page-wrapper">
+      <%= yield %>
+    </div>
+    <footer>
+      <p>Footer goes here</p>
+    </footer>
+
+  </body>
+</html>
